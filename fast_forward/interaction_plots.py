@@ -184,7 +184,7 @@ def make_distances_distribution_plot(plot_data, atom_names, save_plot_data=False
             resid2, name2 = parsed_names[j]
             ax = axarr[i, j-1]
             if i < j: # plot only upper triangle of the matrix
-                atoms_key = f'{resid1}_{resid2}_{name1}_{name2}'
+                atoms_key = f'{resid1}_{name1}_{resid2}_{name2}'
                 if atoms_key in plot_data['distances']:
                     _plotter_distance_distribution(plot_data['distances'][atoms_key], ax)
             else:
