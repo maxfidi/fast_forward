@@ -227,7 +227,7 @@ def __main__():
                                    file_map=file_map,
                                    file_prefix=args.prefix,
                                    hellinger_weight=args.hellinger_weight,
-                                   include_constrains=args.include_constraints)
+                                   include_constraints=args.include_constraints)
             
             atom_names = [f'{resid}_{name}' for (_, name), (_, resid) in zip(block.nodes(data='atomname'), block.nodes(data='resid'))]
 
